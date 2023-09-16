@@ -58,10 +58,10 @@ export const NavBar = () => {
             <Linkk to="/">HOME</Linkk>
           </li>
           <li>
-            <Linkk to="/">ABOUT THE CENTRE</Linkk>
+            <Linkk to="/about">ABOUT US</Linkk>
           </li>
           <li>
-            <Linkk to="/">CONTACT US</Linkk>
+            <Linkk to="mailto:yuninconceptltd@gmail.com">CONTACT US</Linkk>
           </li>
 
           <li>
