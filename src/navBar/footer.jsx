@@ -170,7 +170,7 @@ export const Footer = () => {
           </div>
 
           <div className="col-lg-8">
-            <form>
+            <form className="php-email-form">
               <div className="row">
                 <div className="col-md-6 form-group">
                   <input
