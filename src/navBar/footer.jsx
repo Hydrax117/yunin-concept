@@ -8,6 +8,8 @@
 // } from "react-icons/bi";
 // import { Link } from "react-router-dom";
 
+import { BiCurrentLocation, BiLogoGmail, BiPhone } from "react-icons/bi";
+
 export const Footer = () => {
   return (
     // <div className="footer">
@@ -106,16 +108,16 @@ export const Footer = () => {
     // </div>
 
     // <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-header">
+    <section id="contact" className="contact">
+      <div className="container">
+        <div className="section-header">
           <center>
             <h2>Contact Us</h2>
           </center>
         </div>
       </div>
 
-      <div class="map">
+      <div className="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.6304666763085!2d7.477044474934913!3d9.097387290966688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a899107f5f3%3A0x76665f909042afad!2s11%20Thames%20Street%2C%20Maitama%20900001%2C%20Abuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1694829723429!5m2!1sen!2sng"
           frameborder="0"
@@ -125,67 +127,65 @@ export const Footer = () => {
       </div>
       {/* <!-- End Google Maps --> */}
 
-      <div class="container">
-        <div class="row gy-5 gx-lg-5">
-          <div class="col-lg-4">
-            <div class="info">
+      <div className="container">
+        <div className="row gy-5 gx-lg-5">
+          <div className="col-lg-4">
+            <div className="info">
               <h3>Get in touch</h3>
-              <p>
-                Et id eius voluptates atque nihil voluptatem enim in tempore
-                minima sit ad mollitia commodi minus.
-              </p>
+              <p>get in touch with our team of highly trained professionls</p>
 
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div className="info-item d-flex">
+                <i className="">
+                  <BiCurrentLocation />
+                </i>
                 <div>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p> 11 Thames Street Maitama Abuja Nigeria</p>
                 </div>
               </div>
               {/* <!-- End Info Item --> */}
 
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
+              <div className="info-item d-flex">
+                <i className="">
+                  <BiLogoGmail />
+                </i>
                 <div>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p> yuninconceptltd@gmail.com</p>
                 </div>
               </div>
               {/* <!-- End Info Item --> */}
 
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
+              <div className="info-item d-flex">
+                <i className="">
+                  <BiPhone />
+                </i>
                 <div>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55</p>
+                  <p>(+234) 08030805200</p>
                 </div>
               </div>
               {/* <!-- End Info Item --> */}
             </div>
           </div>
 
-          <div class="col-lg-8">
-            <form
-              action="forms/contact.php"
-              method="post"
-              role="form"
-              class="php-email-form"
-            >
-              <div class="row">
-                <div class="col-md-6 form-group">
+          <div className="col-lg-8">
+            <form>
+              <div className="row">
+                <div className="col-md-6 form-group">
                   <input
                     type="text"
                     name="name"
-                    class="form-control"
+                    className="form-control"
                     id="name"
                     placeholder="Your Name"
                     required
                   />
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div className="col-md-6 form-group mt-3 mt-md-0">
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     name="email"
                     id="email"
                     placeholder="Your Email"
@@ -193,26 +193,26 @@ export const Footer = () => {
                   />
                 </div>
               </div>
-              <div class="form-group mt-3">
+              <div className="form-group mt-3">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   name="subject"
                   id="subject"
                   placeholder="Subject"
                   required
                 />
               </div>
-              <div class="form-group mt-3">
+              <div className="form-group mt-3">
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   name="message"
                   placeholder="Message"
                   required
                 ></textarea>
               </div>
 
-              <div class="text-center">
+              <div className="text-center">
                 <button type="submit">Send Message</button>
               </div>
             </form>
