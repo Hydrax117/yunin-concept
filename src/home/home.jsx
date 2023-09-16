@@ -56,7 +56,7 @@ export const Home = () => {
                     </span>
                   </span>
                   <br />
-                  <span className="mt-5">
+                  <span className="mt-5 subtext">
                     At Yunin Concept Ltd, we bridge the future with innovation,
                     commitment, and unparalleled service. From the foundational
                     bricks of infrastructure to the vast expanses of the digital
@@ -66,7 +66,18 @@ export const Home = () => {
                   </span>
                   <br />
 
-                  <div className="btn btn-primary mt-5">Our Services</div>
+                  <div className="btn btn-primary mt-5">
+                    <a
+                      style={{
+                        color: "white",
+                        textDecoration: "none",
+                        padding: "20px",
+                      }}
+                      href="#services"
+                    >
+                      Our Services
+                    </a>
+                  </div>
                 </center>
               </div>
             </section>

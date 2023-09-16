@@ -61,7 +61,16 @@ export const NavBar = () => {
             <Linkk to="/about">ABOUT US</Linkk>
           </li>
           <li>
-            <Linkk to="mailto:yuninconceptltd@gmail.com">CONTACT US</Linkk>
+            <a
+              style={{
+                color: "black",
+                textDecoration: "none",
+              }}
+              href="#contact"
+            >
+              {" "}
+              CONTACT US
+            </a>
           </li>
 
           <li>
