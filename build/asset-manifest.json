@@ -1,21 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.472ff0e9.css",
-    "main.js": "/static/js/main.7610db1f.js",
-    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
-    "static/media/pro.jpg": "/static/media/pro.9f888c6d5c4c14a20915.jpg",
+    "main.css": "/static/css/main.708767e0.css",
+    "main.js": "/static/js/main.fb1c1548.js",
+    "static/js/787.6b896b9f.chunk.js": "/static/js/787.6b896b9f.chunk.js",
+    "static/media/img1.png": "/static/media/img1.315800c2a4da3092999f.png",
+    "static/media/repairs.png": "/static/media/repairs.6ca03ae1514d46b4cf76.png",
+    "static/media/printing.png": "/static/media/printing.71a5419666d56a47894e.png",
+    "static/media/fashion.png": "/static/media/fashion.ef01725c23af4c55af0c.png",
     "static/media/construction.png": "/static/media/construction.2b094fd167826972cc68.png",
+    "static/media/ict-trainning.jpg": "/static/media/ict-trainning.d747800d2f6162893cbb.jpg",
+    "static/media/maintenance-technician.jpeg": "/static/media/maintenance-technician.08b5e694b76f569e2300.jpeg",
     "static/media/img2.jpg": "/static/media/img2.4e4d3226b0b608474133.jpg",
+    "static/media/Oil-and-Gas.jpg": "/static/media/Oil-and-Gas.dbd11f1027adbf92bd32.jpg",
     "static/media/img3.jpg": "/static/media/img3.d3c813d2c4bb9c2f46be.jpg",
-    "static/media/logo.png": "/static/media/logo.4314108908f32e2ff9d4.png",
-    "static/media/img1.jpg": "/static/media/img1.fd5fed2f3ff0794a3e0c.jpg",
+    "static/media/img1.jpg": "/static/media/img1.740e4aaa37772c396a44.jpg",
+    "static/media/logo.png": "/static/media/logo.124bc5c6164af2d15134.png",
+    "static/media/bank_male.jpg": "/static/media/bank_male.ae11454276b0dba80518.jpg",
+    "static/media/skill.jpg": "/static/media/skill.084efa0a00cc82aa2c0a.jpg",
+    "static/media/kamil1.jpg": "/static/media/kamil1.65a2d8226afa72890db4.jpg",
+    "static/media/blank_female.jpg": "/static/media/blank_female.f3a17fedc4c5d9eef56c.jpg",
     "index.html": "/index.html",
-    "main.472ff0e9.css.map": "/static/css/main.472ff0e9.css.map",
-    "main.7610db1f.js.map": "/static/js/main.7610db1f.js.map",
-    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+    "main.708767e0.css.map": "/static/css/main.708767e0.css.map",
+    "main.fb1c1548.js.map": "/static/js/main.fb1c1548.js.map",
+    "787.6b896b9f.chunk.js.map": "/static/js/787.6b896b9f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.472ff0e9.css",
-    "static/js/main.7610db1f.js"
+    "static/css/main.708767e0.css",
+    "static/js/main.fb1c1548.js"
   ]
 }

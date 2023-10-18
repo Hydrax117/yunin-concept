@@ -9,7 +9,7 @@ export const About = () => {
 
   useEffect(() => {
     AOS.init();
-    document.title = "home";
+    document.title = "About Us";
     setTimeout(() => {
       setIsloading(false);
     }, 3000);
@@ -19,59 +19,68 @@ export const About = () => {
     <>
       {isLoading === true ? (
         <>
-          <div className="loader-container">
-            <div className="loader"></div>
+          <div class="spinner-wrapper">
+            <div class="spinner">
+              <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+              </div>
+            </div>
           </div>
         </>
       ) : (
         <>
           <NavBar />
-          <div className="container" data-aos="fade-up">
+          <div className=""></div>
+          <div className="container about-height " data-aos="fade-up">
             <center>
-              <h2>About</h2>
+              <h2 className="mt-5">About Y & I CONNECTS NIG LTD</h2>
             </center>
             <center>
               <p>
-                Established in 2023, Yunin Concept Ltd has steadily risen as a
-                beacon of innovation, trust, and excellence in the realm of
-                multifaceted service solutions. With a rich history and a
-                forward-looking vision, our firm stands at the intersection of
-                tradition and modernity, a testimony to our unwavering
-                commitment to offering unparalleled services. Our foundation was
-                built on the cornerstone of Construction – where every brick
-                laid and every building erected represents our dedication to
-                quality craftsmanship. With time, we recognized the growing
-                needs of our communities and industries, which led us to
-                diversify and expand our portfolio. In Borehole Drilling, we
-                plumb the depths to provide an essential life resource,
-                reflecting our pledge to sustainability. Our Electrification
-                projects are a testament to our ambition of illuminating lives,
-                while our ventures in Electric and Electronic Supply support
-                businesses and homes, ensuring they operate at peak efficiency.
-                The digital age beckoned, and we responded. Our Networking
-                solutions knit the world closer together, and our comprehensive
-                ICT Training programs offer a gateway to digital proficiency.
-                With CT Gadget Supply, we remain at the forefront of
-                technological trends, catering to a tech-savvy generation hungry
-                for the latest innovations. Understanding the pivotal role of a
-                robust online identity, our Web Design and Maintenance division
-                creates and sustains compelling digital narratives. In the realm
-                of Estate Development, we don't just construct buildings; we
-                shape communities, crafting living experiences. Venturing into
-                the global arena, our Oil and Gas Import and Export Services
-                have become synonymous with reliability and seamless
-                transactions. Our intricate understanding of the market nuances
-                ensures that we deliver value at every stage. Our diverse
-                offerings, underpinned by a singular vision of excellence, have
-                cemented our reputation in each sector we delve into. At Yunin
-                Concept Ltd, we believe in the power of synergy and
-                collaboration. Every service we provide, every project we
-                undertake, and every client we serve is a testament to our
-                overarching ethos: to elevate, innovate, and serve with
-                integrity. Join us, as we continue our journey of shaping
-                futures, building legacies, and crafting a world where every
-                ambition is within reach. Welcome to Yunin Concept Ltd, where
-                dreams meet reality.
+                Founded on the principles of innovation, excellence, and
+                integrity, Y & I CONNECTS NIG LTD has grown to become a beacon
+                of reliability and progress in the industries we serve. Our
+                journey began with a singular vision: to provide unparalleled
+                solutions that empower businesses, enrich communities, and drive
+                the progress of sectors vital to our world's growth and
+                development. A Multi-Faceted Approach At Y & I CONNECTS NIG LTD,
+                we recognize the interwoven tapestry of modern demands. In
+                response, we've cultivated a diverse portfolio of services,
+                ensuring that our clients receive comprehensive solutions from a
+                single trusted partner. Construction: Grounded in precision and
+                architectural finesse, we've erected infrastructures that define
+                skylines and provide lasting value. Borehole Drilling: With
+                every borehole we drill, we tap into nature's reservoir,
+                bringing essential resources to those who need them most.
+                Electrification: Our commitment to progress is epitomized by our
+                ventures in electrification, illuminating lives and industries.
+                Electric and Electronic Supply: Acting as a conduit for quality
+                and reliability, our supply chain is fortified with the best
+                electrical and electronic components available. Networking and
+                ICT Training: In the age of digital connection, our networking
+                solutions streamline communication, while our ICT training
+                programs empower the next generation of tech leaders. CT Gadget
+                Supply: We keep our clients at technology's forefront, providing
+                them with the latest and most efficient CT gadgets. Web Design
+                and Maintenance: Our digital artisans sculpt online experiences
+                that captivate, engage, and convert. Estate Development: Beyond
+                bricks and mortar, we craft homes and communities that resonate
+                with aspirations and dreams. Oil and Gas Import and Export
+                Services: Steadfast in our approach, we've solidified our
+                position in the global oil and gas supply chain, ensuring
+                seamless trade and consistent value. Our Commitment At the heart
+                of Y & I CONNECTS NIG LTD's operations is an unwavering
+                commitment to our clients, our people, and our planet. We
+                continually invest in research, technology, and training,
+                ensuring that we stay ahead of industry curves and deliver value
+                in every project we undertake. As we chart our course into the
+                future, we invite you to join us. Experience the Y & I CONNECTS
+                NIG LTD difference, where every service rendered is a testament
+                to our dedication and passion. Welcome to Y & I CONNECTS NIG LTD
+                - Building Today for Tomorrow's World.
               </p>
             </center>
           </div>

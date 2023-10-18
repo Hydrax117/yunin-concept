@@ -8,6 +8,9 @@ export const Linkk = styled(Link)`
   display: block;
   width: 100%;
   text-align: center;
+  &:hover {
+    color: red;
+  }
 `;
 export const NavBar = () => {
   const logo = require("../images/logo.png");
@@ -58,26 +61,21 @@ export const NavBar = () => {
             <Linkk to="/">HOME</Linkk>
           </li>
           <li>
+            <Linkk to="/our-services">OUR SERVICES</Linkk>
+          </li>
+          <li>
             <Linkk to="/about">ABOUT US</Linkk>
           </li>
           <li>
-            <a
-              style={{
-                color: "black",
-                textDecoration: "none",
-              }}
-              href="#contact"
-            >
-              {" "}
-              CONTACT US
-            </a>
+            <Linkk to="/contact-us">CONTACT US</Linkk>
           </li>
 
           <li>
             <Linkk to="/our-team">OUR TEAM</Linkk>
           </li>
+
           <li>
-            <Linkk style={{ color: "green" }}>RC 934236</Linkk>
+            <Linkk style={{ color: "green" }}>RC 1892066</Linkk>
           </li>
         </ul>
       </div>

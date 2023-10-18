@@ -1,18 +1,15 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import {
-  BiLogoFacebook,
-  BiLogoInstagram,
-  BiLogoLinkedin,
-  BiLogoTwitter,
-} from "react-icons/bi";
 import { useState } from "react";
 import { NavBar } from "../navBar/navBar";
 import { Footer } from "../navBar/footer";
+import { TeamCard } from "../components/team-card";
 
 export const Team = () => {
-  const img = require("../images/pro.jpg");
+  const kamill = require("../images/kamil1.jpg");
+  const blank_male = require("../images/bank_male.jpg");
+  const blank_female = require("../images/blank_female.jpg");
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
@@ -26,8 +23,15 @@ export const Team = () => {
     <>
       {isLoading === true ? (
         <>
-          <div className="loader-container">
-            <div className="loader"></div>
+          <div class="spinner-wrapper">
+            <div class="spinner">
+              <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+              </div>
+            </div>
           </div>
         </>
       ) : (
@@ -47,99 +51,19 @@ export const Team = () => {
                 </div>
                 <div className="row gy-5 mt-5">
                   {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Abubakar Yunusa</h4>
-                        <span>Director</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamCard
+                    image={blank_male}
+                    name={"Abubakar Yunusa."}
+                    role={"Director"}
+                  />
                   {/* end of team member */}
 
                   {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Yahya Yunusa</h4>
-                        <span>Director</span>
-                      </div>
-                    </div>
-                  </div>
-                  {/* end of team member */}
-
-                  {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Jamil Yunusa</h4>
-                        <span>Director</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamCard
+                    image={blank_male}
+                    name={"Muhammad Rilwan                    "}
+                    role={"Director"}
+                  />
                   {/* end of team member */}
                 </div>
               </div>
@@ -152,197 +76,54 @@ export const Team = () => {
                     <h2>Management Team</h2>
                   </center>
                 </div>
+                .
                 <div className="row gy-5 mt-5">
                   {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Abubakar Yunusa</h4>
-                        <span>Managing Director/CEO</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamCard
+                    image={blank_male}
+                    name={"Abubakar Yunusa"}
+                    role={"Managing Director/CEO"}
+                  />
                   {/* end of team member */}
 
                   {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Barrister M. K. B. Musa</h4>
-                        <span>Company Secretary/Legal Adviser</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamCard
+                    image={blank_male}
+                    name={"Barrister M. K. B. Musa"}
+                    role={"Company Secretary/Legal Adviser"}
+                  />
                   {/* end of team member */}
 
                   {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Muhammad Rilwan</h4>
-                        <span>Director Administration</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamCard
+                    image={blank_male}
+                    name={"Muhammad Rilwan"}
+                    role={"Director Administration"}
+                  />
                   {/* end of team member */}
 
                   {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Haruna Daddau</h4>
-                        <span>Director Finance and supply</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamCard
+                    image={blank_male}
+                    name={"Haruna Daddau"}
+                    role={"Director Finance and supply"}
+                  />
                   {/* end of team member */}
 
                   {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Buhari Kamil</h4>
-                        <span>Director ICT</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamCard
+                    image={kamill}
+                    name={"Buhari Kamil"}
+                    role={"Director ICT"}
+                  />
                   {/* end of team member */}
 
                   {/* start of team member */}
-                  <div
-                    className="col-xl-4 col-md-6 d-flex"
-                    data-aos="zoom-in"
-                    data-aos-delay={600}
-                  >
-                    <div className="team-member">
-                      <div className="member-img">
-                        <img src={img} className="img-fluid" alt="" />
-                      </div>
-                      <div className="member-info">
-                        <div className="social">
-                          <span className="s-icons">
-                            <BiLogoTwitter />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoFacebook />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoInstagram />
-                          </span>
-                          <span className="s-icons">
-                            <BiLogoLinkedin />
-                          </span>
-                        </div>
-                        <h4>Babaita Abdulazeez Taiwo</h4>
-                        <span>Director Projects and Engineering Services</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TeamCard
+                    image={blank_female}
+                    name={"Babaita Abdulazeez Taiwo"}
+                    role={"Director Projects and Engineering Services"}
+                  />
                   {/* end of team member */}
                 </div>
               </div>
